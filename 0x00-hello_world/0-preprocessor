@@ -1,0 +1,2 @@
+#!/bin/bash
+cpp "$CFILE" c && sed -i '3,$d' c
