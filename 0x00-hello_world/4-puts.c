@@ -1,6 +1,5 @@
 # include <stdio.h>
 /**
- *The main function
  * main - first entry
  * Return:0
  */
