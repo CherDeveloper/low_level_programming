@@ -1,4 +1,4 @@
-# include <studio.h>
+# include <stdio.h>
 /**
  * main- second entry
  * return: 0
