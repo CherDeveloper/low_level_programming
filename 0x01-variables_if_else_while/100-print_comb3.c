@@ -2,23 +2,34 @@
 
 /**
  * main - prints all the possible different combinations of two digits
- * Return: Always 0 (success)
+ * Return always 0 (success)
  */
 int main(void)
 {
-	int a, b;
+	int c;
+	int d = 0;
 
-	for (a = 0; a < 9; a++)
+	while (d < 10)
 	{
-		for (b = a + 1; b <= 9; b++)
-			putchar(a + '0');
-			putchar(b + '0');
-			if (a < 8 || b < 9)
+		c = 0;
+		while (c < 10)
+		{
+			if (d != c && d < c)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar('0' + d);
+				putchar('0' + c);
+
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+
+			c++;
+		}
+		d++;
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
