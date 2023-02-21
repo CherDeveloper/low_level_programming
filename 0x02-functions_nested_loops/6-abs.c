@@ -2,9 +2,10 @@
 
 /**
  * _abs - check the code
+ * @n: the int to be checked
  * Return: Void.
  */
-int _abs(int)
+int _abs(int n)
 {
 	if (n >= 0)
 	{
