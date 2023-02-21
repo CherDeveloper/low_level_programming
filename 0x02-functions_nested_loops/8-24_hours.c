@@ -11,7 +11,7 @@
 
 	k = 0;
 
-	while (i < 24)
+	while (k < 24)
 	{
 		l = 0;
 		while (l < 60)
