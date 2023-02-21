@@ -6,7 +6,7 @@
  * Rturn: no return
  */
 
-void times_table(void)
+void time_teble(void)
 {
 	int row, column, product, tens, ones;
 
