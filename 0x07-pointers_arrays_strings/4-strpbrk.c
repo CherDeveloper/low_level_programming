@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * _strpbrk - locates first occurence of any bytes from accept in s
  *
@@ -20,5 +19,5 @@ char *_strpbrk(char *s, char *accept)
 				return (s + i);
 		}
 	}
-	return (NULL)
+	return (NULL);
 }
