@@ -1,12 +1,11 @@
 #include "main.h"
 
-
 /**
  * _strspn - gets the length of a prefix substring
  *
  * @s: string to work on
  * @accept: pattern to match against
- * Return: unsigned int to show how many initial bytes match the pattern
+ * Return: unsigned int to how many initial bytes match the pattern
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -27,5 +26,5 @@ unsigned int _strspn(char *s, char *accept)
 		if (match != len)
 			return (len);
 	}
-	return (0)
+	return (0);
 }
