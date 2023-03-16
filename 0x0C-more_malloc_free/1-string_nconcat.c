@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * _strlen - calculate and return string length
- * @string: string.
+ * @string: string
  * Retturn: string length
  */
 int _strlen(char *string)
@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	if (num >= _strlen(s2))
 		num = _strlen(s2);
-	
+
 	len = _strlen(s1) + num + 1;
 
 	ptr = malloc(sizeof(*ptr) * len);
