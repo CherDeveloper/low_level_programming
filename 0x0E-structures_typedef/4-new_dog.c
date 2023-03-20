@@ -5,7 +5,7 @@ int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 
 /**
- * new_dog - create a new dog
+ * new_dog - ...
  * @name: new dog name
  * @age: new dog age
  * @owner: owner details
@@ -47,7 +47,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		cutie_dog->owner = _strcpy(cutie_dog->owner, owner);
 		cutie_dog->age = age;
 	}
-	
+
 	return (cutie_dog);
 }
 
@@ -81,7 +81,7 @@ char *_strcpy(char *dest, char *src)
 {
 	int i;
 
-	for(i = 0; src[i] != '\0'; i++)
+	for (i = 0; src[i] != '\0'; i++)
 	{
 		dest[i] = src[i];
 	}
