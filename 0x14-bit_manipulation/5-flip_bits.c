@@ -4,6 +4,7 @@
 /**
  * flip_bits - counts the number of bits needed.
  * @n: The number.
+ * @m: The number to flip
  * Return: The number
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
