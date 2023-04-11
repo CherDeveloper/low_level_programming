@@ -11,7 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int che;
 	ssize_t kip, mem;
-	char *car;
+	char *buf;
 
 	if (!filename)
 		return (0);
@@ -21,16 +21,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (che == -1)
 		return (0);
 
-	car = malloc(sizeof(char) * (letters));
-	if(!car)
+	buf = malloc(sizeof(char) * (letters));
+	if(!buf)
 		return (0);
 
-	kip = read(che, car, letters);
+	kip = read(che, buf, letters);
 	mem = write(STDOUT_FILENO, che, kip);
 
 	close(che);
 
-	free(car);
+	free(buf);
 
 	return (mem);
 }
