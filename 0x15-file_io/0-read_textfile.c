@@ -24,6 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	car = malloc(sizeof(char) * (letters));
 	if(!car)
 		return (0);
+
 	kip = read(che, car, letters);
 	mem = write(STDOUT_FILENO, che, kip);
 
